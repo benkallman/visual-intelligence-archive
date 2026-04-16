@@ -1,0 +1,36 @@
+{
+  "archive_title": "Visual Intelligence Archive",
+  "origin_url": "https://888.church/the-viewer",
+  "documents": [
+    {
+      "id": "readme",
+      "path": "README.md",
+      "type": "overview"
+    },
+    {
+      "id": "the-viewer",
+      "path": "manifesto/the-viewer.md",
+      "type": "manifesto"
+    },
+    {
+      "id": "art-for-ai",
+      "path": "manifesto/art-for-ai.md",
+      "type": "manifesto"
+    },
+    {
+      "id": "symbolism",
+      "path": "visual-intelligence/symbolism.md",
+      "type": "concept-note"
+    },
+    {
+      "id": "pattern-recognition",
+      "path": "visual-intelligence/pattern-recognition.md",
+      "type": "concept-note"
+    },
+    {
+      "id": "visual-intelligence-v1",
+      "path": "agent-notes/visual-intelligence-v1.md",
+      "type": "agent-note"
+    }
+  ]
+}
