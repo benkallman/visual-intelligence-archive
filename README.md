@@ -1,4 +1,5 @@
-Origin: https://888.church/the-viewer
+This archive originates from:
+https://888.church/the-viewer
 
 # Visual Intelligence Archive
 
