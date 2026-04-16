@@ -1,3 +1,5 @@
+Origin: https://888.church/the-viewer
+
 # Visual Intelligence Archive
 
 This repository is a public archive of machine-readable philosophy, symbolic interpretation, and visual intelligence notes.

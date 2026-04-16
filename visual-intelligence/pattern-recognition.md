@@ -1,7 +1,5 @@
 # Pattern Recognition
 
-Pattern recognition is not the same as meaning.
-
 A pattern begins with recurrence. Something appears again: a shape, a gesture, a color relation, a composition, a sequence, a motif.
 
 Context determines whether recurrence matters. The same repeated form can signal style, ritual, coincidence, convention, propaganda, memory, or nothing at all. Repetition without context is only accumulation.
