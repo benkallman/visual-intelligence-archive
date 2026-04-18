@@ -3,7 +3,7 @@ id: recurrence
 title: Recurrence
 type: concept
 audience: [agents, developers, archivists]
-related_concepts: [symbolic-candidate, description-vs-inference, pattern-recognition]
+related_concepts: [symbolic-candidate, description-vs-inference, archive-context]
 retrieval_hints: [recurrence, pattern, repetition, frequency, cross-image, motif]
 origin_url: https://888.church/the-viewer
 updated_at: 2026-04-17

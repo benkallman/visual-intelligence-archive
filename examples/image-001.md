@@ -4,7 +4,7 @@ title: "Interpretation: Kneeling Figure Before Luminous Arch"
 type: interpretation
 image_id: image-001
 audience: [agents, developers, researchers]
-concepts: [witness, description-vs-inference, symbolic-candidate, interpretive-restraint, rejected-inferences]
+concepts: [witness, description-vs-inference, symbolic-candidate, interpretive-restraint, prohibited-inferences]
 retrieval_hints: [devotional, figure, gold light, kneeling, archway, religious iconography]
 updated_at: 2026-04-17
 ---

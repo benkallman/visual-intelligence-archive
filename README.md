@@ -45,13 +45,12 @@ It is a philosophy archive and an operational framework. The 888 spirit — witn
 | `schemas/` | JSON schemas for interpretation records |
 | `examples/` | Example image interpretation files (md + json) |
 | `evals/` | Eval sets for symbolic overreach, description vs inference |
-| `resources/` | MCP resource definitions |
-| `prompts/` | MCP prompt definitions |
-| `mcp/` | MCP server outline and maps |
+| `prompts/` | MCP prompt templates |
+| `mcp/` | MCP server outline, resource map, and prompt map |
+| `mcp-server/` | MCP server implementation scaffold (Node/TypeScript) |
 | `index/` | Machine-readable indexes of documents, concepts, and tags |
 | `manifesto/` | Source philosophical texts |
-| `visual-intelligence/` | Core concept notes (symbolism, pattern recognition) |
-| `data/` | Legacy index and raw data |
+| `visual-intelligence/` | Extended concept notes (symbolism, pattern recognition) |
 
 ---
 

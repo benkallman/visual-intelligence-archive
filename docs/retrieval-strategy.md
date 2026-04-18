@@ -31,8 +31,8 @@ Three index files provide machine-readable entry points:
 
 **For MCP integration:**
 1. Load `mcp/resource-map.json` and `mcp/prompt-map.json`
-2. Register resources from `resources/`
-3. Register prompts from `prompts/`
+2. Register resources from `mcp/resource-map.json`
+3. Register prompts from `mcp/prompt-map.json` (files in `prompts/`)
 4. See `mcp/server-outline.md` for implementation guidance
 
 ## YAML Front Matter Fields

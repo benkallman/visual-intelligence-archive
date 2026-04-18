@@ -12,12 +12,6 @@ updated_at: 2026-04-17
 
 # Visual Intelligence v1
 
-Title: Visual Intelligence v1
-
-Type: agent note
-
-Audience: humans, artists, developers, archivists, crawlers, machine systems
-
 ## Core Principles
 
 - Images can be read by humans and processed by machines, but those are not identical acts.
@@ -38,6 +32,6 @@ Audience: humans, artists, developers, archivists, crawlers, machine systems
 
 - Do not equate correlation with meaning.
 - Do not treat metadata as a substitute for perception.
-- Do not assign human interior states to machine systems.
+- Do not assign human interior states to depicted subjects from image features alone.
 - Do not flatten symbols into single fixed definitions.
 - Do not ignore authorship, context, or historical use when interpreting images.
