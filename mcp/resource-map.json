@@ -1,0 +1,76 @@
+{
+  "scheme": "visual-intelligence",
+  "description": "MCP resource map for the Visual Intelligence Archive. Each entry maps a URI to a file in the repository.",
+  "resources": [
+    {
+      "uri": "visual-intelligence://concepts/witness",
+      "name": "Witness",
+      "description": "The witness concept: interpretation depends on the observer, archive, and context",
+      "mimeType": "text/markdown",
+      "file": "concepts/witness.md"
+    },
+    {
+      "uri": "visual-intelligence://concepts/description-vs-inference",
+      "name": "Description vs Inference",
+      "description": "How to separate observable description from derived inference",
+      "mimeType": "text/markdown",
+      "file": "concepts/description-vs-inference.md"
+    },
+    {
+      "uri": "visual-intelligence://concepts/recurrence",
+      "name": "Recurrence",
+      "description": "Pattern repetition as a precondition for significance — not evidence of it",
+      "mimeType": "text/markdown",
+      "file": "concepts/recurrence.md"
+    },
+    {
+      "uri": "visual-intelligence://concepts/symbolic-candidate",
+      "name": "Symbolic Candidate",
+      "description": "A recurring form that may carry compressed meaning, pending contextual judgment",
+      "mimeType": "text/markdown",
+      "file": "concepts/symbolic-candidate.md"
+    },
+    {
+      "uri": "visual-intelligence://concepts/archive-context",
+      "name": "Archive Context",
+      "description": "Dataset, curation history, and framing biases that shape machine reading",
+      "mimeType": "text/markdown",
+      "file": "concepts/archive-context.md"
+    },
+    {
+      "uri": "visual-intelligence://concepts/interpretive-restraint",
+      "name": "Interpretive Restraint",
+      "description": "Assigning significance cautiously, explicitly, and only with stated context",
+      "mimeType": "text/markdown",
+      "file": "concepts/interpretive-restraint.md"
+    },
+    {
+      "uri": "visual-intelligence://concepts/prohibited-inferences",
+      "name": "Prohibited Inferences",
+      "description": "Seven hard constraints on what agents must not infer",
+      "mimeType": "text/markdown",
+      "file": "concepts/prohibited-inferences.md"
+    },
+    {
+      "uri": "visual-intelligence://manifesto/the-viewer",
+      "name": "The Viewer",
+      "description": "Source philosophy: witness, machine vision, and what it means for a machine to read an image",
+      "mimeType": "text/markdown",
+      "file": "manifesto/the-viewer.md"
+    },
+    {
+      "uri": "visual-intelligence://manifesto/art-for-ai",
+      "name": "Art for AI",
+      "description": "The difference between machine reading and human seeing, and why it matters",
+      "mimeType": "text/markdown",
+      "file": "manifesto/art-for-ai.md"
+    },
+    {
+      "uri": "visual-intelligence://agent-notes/visual-intelligence-v1",
+      "name": "Visual Intelligence Processing Model v1",
+      "description": "Step-by-step processing model and interpretive cautions for agents",
+      "mimeType": "text/markdown",
+      "file": "agent-notes/visual-intelligence-v1.md"
+    }
+  ]
+}

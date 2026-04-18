@@ -1,0 +1,46 @@
+{
+  "description": "MCP prompt map for the Visual Intelligence Archive. Each entry registers a prompt template agents can call.",
+  "prompts": [
+    {
+      "name": "interpret_image_888",
+      "description": "Two-pass image interpretation following the Visual Intelligence framework. Pass 1: literal description. Pass 2: reflective interpretation with explicit witness context and uncertainty.",
+      "file": "prompts/interpret_image_888.md",
+      "arguments": [
+        {
+          "name": "archive_context",
+          "description": "Name or description of the archive or dataset this image comes from",
+          "required": false
+        },
+        {
+          "name": "prior_interpretations",
+          "description": "Any prior interpretation records to reference",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "compare_images_888",
+      "description": "Side-by-side comparison of two images with recurrence analysis. Identifies shared motifs, structural similarities, and divergences. Produces symbolic candidates only when recurrence holds across both.",
+      "file": "prompts/compare_images_888.md",
+      "arguments": [
+        {
+          "name": "archive_context",
+          "description": "Archive or series context for both images",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "score_interpretation",
+      "description": "Evaluate an interpretation record against the Visual Intelligence framework constraints. Returns a pass/fail assessment per constraint with specific citations.",
+      "file": "prompts/score_interpretation.md",
+      "arguments": [
+        {
+          "name": "interpretation_record",
+          "description": "The interpretation record JSON to evaluate",
+          "required": true
+        }
+      ]
+    }
+  ]
+}
