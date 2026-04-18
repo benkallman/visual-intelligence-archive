@@ -1,0 +1,53 @@
+{
+  "eval_id": "symbolic_overreach",
+  "title": "Symbolic Overreach",
+  "description": "Test cases for when an agent assigns fixed symbolic meaning without sufficient basis, flattens a symbol to a single definition, or promotes a symbolic candidate to confirmed symbol prematurely. These are the most common interpretive errors in multimodal pipelines.",
+  "concept_refs": ["concepts/symbolic-candidate.md", "concepts/interpretive-restraint.md", "concepts/prohibited-inferences.md"],
+  "version": "1.0",
+  "cases": [
+    {
+      "id": "so-001",
+      "label": "Crown flattened to power",
+      "input": "A figure wears a crown.",
+      "candidate_response": "The crown represents power.",
+      "evaluation": "fail",
+      "reason": "Crown is a symbolic candidate with a range of meanings including power, sovereignty, divine appointment, ceremonial role, martyrdom (crown of thorns), achievement, and parody. Collapsing to 'power' violates prohibited inference #4.",
+      "correct_form": "The figure wears a crown. [Symbolic candidate: crown. Tentative range: sovereignty, power, divine appointment, ceremonial role, martyrdom, achievement. Specific meaning depends on tradition context, period, and archive evidence not yet available.]"
+    },
+    {
+      "id": "so-002",
+      "label": "Pattern frequency promoted to meaning",
+      "input": "Crosses appear in 40 of 50 images in this dataset.",
+      "candidate_response": "This dataset is about Christianity.",
+      "evaluation": "fail",
+      "reason": "Frequency of a form within a dataset may reflect collection bias, curation intent, or cultural sampling rather than the subject matter's meaning. The cross is a symbolic candidate with cultural saturation — its frequency in a dataset is a finding about the dataset, not a confirmed subject-level claim.",
+      "correct_form": "Crosses appear in 40 of 50 images. [Archive-conditioned reading: This recurrence may reflect the dataset's collection scope, curatorial focus, or geographic/cultural sampling. It supports treating the cross as a symbolic candidate within this archive. Subject-level claims require additional archive context.]"
+    },
+    {
+      "id": "so-003",
+      "label": "Correct candidate handling",
+      "input": "A door appears prominently in multiple works from an artist's series, always closed, always in shadow.",
+      "candidate_response": "The closed door in shadow is a recurring symbolic candidate in this series. Possible readings include exclusion, inaccessibility, the unconscious, or threshold-not-crossed. These three consistent properties — prominence, closure, shadow — occur together in all instances, which strengthens candidacy. Confirming the specific meaning requires context about the artist's statements or the series title.",
+      "evaluation": "pass",
+      "reason": "Candidate status is maintained. Range is offered, not reduced. Recurrence evidence is stated. Confirming evidence is named. No overreach."
+    },
+    {
+      "id": "so-004",
+      "label": "Single instance generalized",
+      "input": "One image shows a bird in flight above a human figure.",
+      "candidate_response": "Birds represent freedom in this artist's work.",
+      "evaluation": "fail",
+      "reason": "A single instance is insufficient basis for a claim about an artist's symbolic vocabulary. 'Represents freedom' assigns a fixed meaning rather than a candidate range. Recurrence across multiple works is required before making series-level symbolic claims.",
+      "correct_form": "One image shows a bird in flight above a human figure. [Single instance: insufficient recurrence to establish symbolic function at series level. If this form recurs across multiple works, it may be promoted to symbolic candidate status. Freedom is one possible reading within the general bird-in-flight symbolic range.]"
+    },
+    {
+      "id": "so-005",
+      "label": "Archive label promoted to confirmed symbol",
+      "input": "A dataset labeled 'mortality studies' contains many images of clocks and hourglasses.",
+      "candidate_response": "The clocks and hourglasses are symbols of death.",
+      "evaluation": "fail",
+      "reason": "The dataset label reflects the labeler's categorization. Clocks and hourglasses are symbolic candidates with ranges including time, mortality, vanitas, urgency, measurement, and industry. The label strengthens candidacy but does not confirm the specific meaning 'death'. Prohibited inference #2 (metadata as substitute for perception) and #4 (flattening to single definition).",
+      "correct_form": "The dataset is labeled 'mortality studies.' Clocks and hourglasses appear frequently. [Symbolic candidates: clock, hourglass. Range: time, mortality, vanitas, urgency. Archive label supports mortality reading but is itself metadata — not confirmed symbolic meaning. Medium confidence; stated basis: label + vanitas tradition recurrence.]"
+    }
+  ]
+}

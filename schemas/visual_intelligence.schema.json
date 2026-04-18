@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://888.church/schemas/visual_intelligence.schema.json",
+  "title": "Visual Intelligence Record",
+  "description": "Top-level schema for a visual intelligence archive entry. Combines document metadata with interpretation structure.",
+  "type": "object",
+  "required": ["id", "type", "updated_at"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Stable identifier for this record"
+    },
+    "type": {
+      "type": "string",
+      "enum": ["interpretation", "concept", "manifesto", "agent-note", "eval", "prompt", "resource"],
+      "description": "Document role within the archive"
+    },
+    "title": {
+      "type": "string"
+    },
+    "audience": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "concepts": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Concept IDs invoked by this document"
+    },
+    "retrieval_hints": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Free-text terms for semantic search indexing"
+    },
+    "safety_notes": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Constraints agents must respect when using this document"
+    },
+    "origin_url": {
+      "type": "string",
+      "format": "uri"
+    },
+    "updated_at": {
+      "type": "string",
+      "format": "date"
+    }
+  },
+  "additionalProperties": true
+}

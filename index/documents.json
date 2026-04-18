@@ -1,0 +1,25 @@
+{
+  "archive_title": "Visual Intelligence Archive",
+  "origin_url": "https://888.church/the-viewer",
+  "updated_at": "2026-04-17",
+  "documents": [
+    { "id": "readme", "path": "README.md", "type": "overview", "concepts": [] },
+    { "id": "the-viewer", "path": "manifesto/the-viewer.md", "type": "manifesto", "concepts": ["witness", "archive-context", "symbolic-candidate", "interpretive-restraint"] },
+    { "id": "art-for-ai", "path": "manifesto/art-for-ai.md", "type": "manifesto", "concepts": ["description-vs-inference", "interpretive-restraint", "archive-context"] },
+    { "id": "symbolism", "path": "visual-intelligence/symbolism.md", "type": "concept-note", "concepts": ["symbolic-candidate", "recurrence", "interpretive-restraint"] },
+    { "id": "pattern-recognition", "path": "visual-intelligence/pattern-recognition.md", "type": "concept-note", "concepts": ["recurrence", "description-vs-inference", "symbolic-candidate"] },
+    { "id": "visual-intelligence-v1", "path": "agent-notes/visual-intelligence-v1.md", "type": "agent-note", "concepts": ["witness", "description-vs-inference", "recurrence", "symbolic-candidate", "interpretive-restraint", "prohibited-inferences"] },
+    { "id": "architecture", "path": "docs/architecture.md", "type": "documentation", "concepts": [] },
+    { "id": "retrieval-strategy", "path": "docs/retrieval-strategy.md", "type": "documentation", "concepts": [] },
+    { "id": "usage", "path": "docs/usage.md", "type": "documentation", "concepts": [] },
+    { "id": "mcp-spec", "path": "docs/mcp-spec.md", "type": "documentation", "concepts": [] },
+    { "id": "image-001-interpretation", "path": "examples/image-001.md", "type": "example", "concepts": ["witness", "description-vs-inference", "symbolic-candidate", "interpretive-restraint"] },
+    { "id": "image-002-interpretation", "path": "examples/image-002.md", "type": "example", "concepts": ["recurrence", "archive-context", "symbolic-candidate", "interpretive-restraint"] },
+    { "id": "eval-description-inference", "path": "evals/description_inference_boundary.json", "type": "eval", "concepts": ["description-vs-inference"] },
+    { "id": "eval-symbolic-overreach", "path": "evals/symbolic_overreach.json", "type": "eval", "concepts": ["symbolic-candidate", "interpretive-restraint", "prohibited-inferences"] },
+    { "id": "eval-witness-context", "path": "evals/witness_context_preservation.json", "type": "eval", "concepts": ["witness", "archive-context"] },
+    { "id": "prompt-interpret", "path": "prompts/interpret_image_888.md", "type": "prompt", "concepts": ["witness", "description-vs-inference", "symbolic-candidate", "interpretive-restraint", "archive-context"] },
+    { "id": "prompt-compare", "path": "prompts/compare_images_888.md", "type": "prompt", "concepts": ["recurrence", "description-vs-inference", "symbolic-candidate", "archive-context"] },
+    { "id": "prompt-score", "path": "prompts/score_interpretation.md", "type": "prompt", "concepts": ["interpretive-restraint", "prohibited-inferences", "witness"] }
+  ]
+}

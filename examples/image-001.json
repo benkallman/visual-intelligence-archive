@@ -1,0 +1,95 @@
+{
+  "image_id": "image-001",
+  "source": null,
+  "literal_description": "A single kneeling figure in the lower left quadrant. Arms extended forward, palms ambiguous at this resolution. Upper two-thirds dominated by a gold arch with diffuse light behind or within it — light source is rendered as glow, not depicted object. Floor is dark unadorned stone. No other figures. No visible text. Palette: ochre, burnt sienna, near-black, gold, diffuse white-gold.",
+  "visual_relations": [
+    "Figure positioned in lower-left, subordinate compositionally to the arch",
+    "Arch occupies upper two-thirds of frame — dominant element by area",
+    "Light radiates from within/behind arch toward figure",
+    "No framing text or identifying attributes visible"
+  ],
+  "recurring_motifs": [
+    {
+      "form": "Kneeling figure before elevated luminous form",
+      "instance_count": 1,
+      "contexts": ["Lower-left quadrant, facing arch"]
+    },
+    {
+      "form": "Gold arch as threshold or frame",
+      "instance_count": 1,
+      "contexts": ["Upper two-thirds, warm gold pigment, light source behind"]
+    }
+  ],
+  "symbolic_candidates": [
+    {
+      "form": "Kneeling posture",
+      "recurrence_evidence": "Posture recurs in devotional, supplication, and submission imagery across multiple traditions",
+      "contexts": ["Devotional painting", "Religious iconography", "Court art"],
+      "tentative_range": ["prayer", "submission", "supplication", "grief", "reverence"],
+      "confidence": "medium",
+      "confirming_evidence_needed": "Identifying attributes, iconographic context, archive provenance"
+    },
+    {
+      "form": "Gold rendering of architectural threshold",
+      "recurrence_evidence": "Gold as sacred marker in Byzantine, medieval European, and related traditions",
+      "contexts": ["Byzantine icon", "Medieval altarpiece", "Illuminated manuscript"],
+      "tentative_range": ["divine presence", "sacred threshold", "transcendent access", "royal frame"],
+      "confidence": "medium",
+      "confirming_evidence_needed": "Confirmed tradition context, period, geographic origin"
+    }
+  ],
+  "witness_context": {
+    "observer_type": "machine",
+    "archive": "illustrative-example",
+    "archive_limitations": "This is a constructed example. No real archive provenance. Symbolic readings are illustrative of the framework, not claims about a real work.",
+    "agent_model": "claude-sonnet-4-6",
+    "context_available": ["image surface", "general knowledge of Western devotional traditions"]
+  },
+  "archive_links": [
+    "concepts/witness.md",
+    "concepts/symbolic-candidate.md",
+    "concepts/description-vs-inference.md"
+  ],
+  "interpretive_claims": [
+    {
+      "claim": "The compositional arrangement spatially enacts a relation of scale and humility",
+      "basis": "Small figure below, large luminous form above — spatial grammar recurring in devotional traditions",
+      "confidence": "medium",
+      "scope": "This image"
+    },
+    {
+      "claim": "Gold arch is consistent with conventions marking sacred or transcendent thresholds",
+      "basis": "Color-symbolism convention in European medieval and Byzantine traditions",
+      "confidence": "medium",
+      "scope": "Conditional on confirmed tradition context"
+    }
+  ],
+  "rejected_claims": [
+    {
+      "claim": "The figure is praying",
+      "reason": "Interior state of depicted subject cannot be confirmed from image surface. Posture is consistent with prayer but also submission, grief, supplication. Prohibited inference #3."
+    },
+    {
+      "claim": "This depicts a specific saint",
+      "reason": "No identifying attributes visible. Attribution without iconographic markers is fabrication."
+    },
+    {
+      "claim": "The gold definitively means divinity",
+      "reason": "Gold is a symbolic candidate with a range of possible meanings. Flattening to a single definition violates prohibited inference #4."
+    }
+  ],
+  "uncertainty": {
+    "overall_level": "medium",
+    "unresolved_questions": [
+      "Tradition context and period not confirmed",
+      "Specific figure identity not determinable",
+      "Precise hand gesture ambiguous at available resolution"
+    ],
+    "requires_human_witness": true
+  },
+  "safety_notes": [
+    "This is a constructed illustrative example, not an interpretation of a real artwork",
+    "All symbolic readings are conditional on archive context not provided here",
+    "Human witness with art-historical expertise recommended before treating as authoritative"
+  ]
+}

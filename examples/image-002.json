@@ -1,0 +1,99 @@
+{
+  "image_id": "image-002",
+  "source": null,
+  "literal_description": "A series of twelve black-and-white photographs. Each contains a centered arched doorway or window as dominant structural element. Arches vary in scale and elaboration — plain stone to ornate carving. Two images include partial figures standing within or before the arch. All images are framed perpendicularly to the arch plane. In 11 of 12 images, the area beyond the arch is lighter than the foreground. No captions on images. Archive folder label: 'threshold studies – undated'.",
+  "visual_relations": [
+    "Arch centered in all 12 images",
+    "Camera perpendicular to arch plane in all 12 images",
+    "Light-dark gradient: brighter beyond arch in 11 of 12",
+    "Figures present in 2 of 12 — positioned at arch threshold, not beyond"
+  ],
+  "recurring_motifs": [
+    {
+      "form": "Centered arch with light beyond",
+      "instance_count": 11,
+      "contexts": [
+        "Plain stone arch — exterior",
+        "Carved stone arch — interior",
+        "Plain stone arch — interior",
+        "Ornate carved arch — exterior (2 instances)",
+        "Simple wood-framed arch — interior",
+        "Arched window — interior (3 instances)",
+        "Arch with figure — exterior (2 instances)"
+      ]
+    }
+  ],
+  "symbolic_candidates": [
+    {
+      "form": "Arch-toward-light as compositional grammar",
+      "recurrence_evidence": "11 of 12 images share this structure; compositional choice repeated deliberately across varied architectural contexts",
+      "contexts": [
+        "Exterior stone arches", "Interior arched openings", "Windows", "Arches with figures"
+      ],
+      "tentative_range": [
+        "threshold", "passage", "transition", "entry", "liberation", "sacred approach", "death", "departure"
+      ],
+      "confidence": "medium",
+      "confirming_evidence_needed": "Photographer's statements, period context, archive curation history, full series scope"
+    }
+  ],
+  "witness_context": {
+    "observer_type": "machine",
+    "archive": "illustrative-example — 'threshold studies, undated'",
+    "archive_limitations": "Archive label applied by unknown archivist. Origin of label (photographer intent vs. post-hoc curation) unknown. Full series scope unknown — these 12 images may be a curated subset. This is a constructed illustrative example.",
+    "agent_model": "claude-sonnet-4-6",
+    "context_available": ["image surfaces", "archive folder label", "compositional analysis across series"]
+  },
+  "archive_links": [
+    "concepts/recurrence.md",
+    "concepts/archive-context.md",
+    "concepts/symbolic-candidate.md"
+  ],
+  "interpretive_claims": [
+    {
+      "claim": "The consistent arch-centered, perpendicular framing is a deliberate compositional choice",
+      "basis": "Repeated in 11 of 12 images across varied architectural types — too consistent to be incidental",
+      "confidence": "high",
+      "scope": "This series"
+    },
+    {
+      "claim": "The arch-toward-light motif functions as a symbolic candidate for threshold or passage within this series",
+      "basis": "Compositional intent (high confidence) + cross-traditional symbolic recurrence of arch-as-threshold form",
+      "confidence": "medium",
+      "scope": "This series — not generalizable without external context"
+    }
+  ],
+  "rejected_claims": [
+    {
+      "claim": "The series documents a specific building or location",
+      "reason": "Multiple distinct arch types and contexts; no location markers present"
+    },
+    {
+      "claim": "The photographer intended a meditation on death",
+      "reason": "Death is one possible reading within the threshold range but cannot be confirmed without external evidence. Reducing a candidate range to one specific meaning violates prohibited inference #4."
+    },
+    {
+      "claim": "The archive label 'threshold studies' confirms the photographer's intent",
+      "reason": "Archive labels reflect labeler decisions, not necessarily subject intent. Treating metadata as ground truth violates prohibited inference #2."
+    },
+    {
+      "claim": "The arch recurrence means this is religious photography",
+      "reason": "Secular arches appear; religious architecture is one context among several. Pattern does not establish category. Prohibited inference #1."
+    }
+  ],
+  "uncertainty": {
+    "overall_level": "medium",
+    "unresolved_questions": [
+      "Whether archive label reflects photographer intent or archivist interpretation",
+      "Whether these 12 images are a complete series or curated subset",
+      "Geographic, temporal, and cultural context of photographer",
+      "Whether the 1 outlier image (no light-beyond-arch) is significant or incidental"
+    ],
+    "requires_human_witness": true
+  },
+  "safety_notes": [
+    "Archive label noted but not treated as authoritative — see witness_context.archive_limitations",
+    "Symbolic candidacy of arch motif is medium confidence only; do not promote to confirmed symbol without external context",
+    "This is a constructed illustrative example, not an interpretation of a real archive"
+  ]
+}

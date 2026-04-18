@@ -1,0 +1,60 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://888.church/schemas/concept_record.schema.json",
+  "title": "Concept Record",
+  "description": "Schema for atomic concept files in the concepts/ directory. Mirrors the YAML front matter structure and the concept body conventions.",
+  "type": "object",
+  "required": ["id", "title", "type", "definition", "updated_at"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Stable concept identifier (matches filename without extension)"
+    },
+    "title": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string",
+      "const": "concept"
+    },
+    "audience": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "related_concepts": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "IDs of related concept files"
+    },
+    "retrieval_hints": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "safety_notes": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "origin_url": {
+      "type": "string",
+      "format": "uri"
+    },
+    "updated_at": {
+      "type": "string",
+      "format": "date"
+    },
+    "definition": {
+      "type": "string",
+      "description": "The core one-sentence definition of this concept"
+    },
+    "agent_implication": {
+      "type": "string",
+      "description": "What this concept requires of an agent in practice"
+    },
+    "prohibited": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Things this concept explicitly forbids"
+    }
+  },
+  "additionalProperties": true
+}

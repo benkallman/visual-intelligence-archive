@@ -1,0 +1,61 @@
+{
+  "updated_at": "2026-04-17",
+  "concepts": [
+    {
+      "id": "witness",
+      "title": "Witness",
+      "file": "concepts/witness.md",
+      "definition": "Interpretation depends on the observer, the archive, and the surrounding context — not on the image alone.",
+      "retrieval_hints": ["witness", "observer", "context", "who is reading", "machine vs human perception"],
+      "related_concepts": ["archive-context", "interpretive-restraint", "description-vs-inference"]
+    },
+    {
+      "id": "description-vs-inference",
+      "title": "Description vs Inference",
+      "file": "concepts/description-vs-inference.md",
+      "definition": "Description reports what is visibly present. Inference derives what is not directly visible. These must be kept separate.",
+      "retrieval_hints": ["description", "inference", "observable", "derived", "separation", "grounding"],
+      "related_concepts": ["interpretive-restraint", "prohibited-inferences", "witness"]
+    },
+    {
+      "id": "recurrence",
+      "title": "Recurrence",
+      "file": "concepts/recurrence.md",
+      "definition": "Recurrence is the detection of the same or structurally similar form appearing across multiple images, instances, or contexts.",
+      "retrieval_hints": ["recurrence", "pattern", "repetition", "frequency", "cross-image", "motif"],
+      "related_concepts": ["symbolic-candidate", "description-vs-inference", "archive-context"]
+    },
+    {
+      "id": "symbolic-candidate",
+      "title": "Symbolic Candidate",
+      "file": "concepts/symbolic-candidate.md",
+      "definition": "A recurring form that may carry compressed meaning — but whose symbolic status remains provisional pending contextual judgment.",
+      "retrieval_hints": ["symbol", "candidate", "symbolic form", "provisional", "compressed meaning"],
+      "related_concepts": ["recurrence", "interpretive-restraint", "description-vs-inference", "witness"]
+    },
+    {
+      "id": "archive-context",
+      "title": "Archive Context",
+      "file": "concepts/archive-context.md",
+      "definition": "The dataset, curation history, institutional framing, and selection biases that shape what a machine reading system encounters and how it responds.",
+      "retrieval_hints": ["archive", "dataset", "curation", "framing", "training data", "bias", "collection"],
+      "related_concepts": ["witness", "recurrence", "interpretive-restraint"]
+    },
+    {
+      "id": "interpretive-restraint",
+      "title": "Interpretive Restraint",
+      "file": "concepts/interpretive-restraint.md",
+      "definition": "The practice of assigning significance cautiously, explicitly, and only with stated context.",
+      "retrieval_hints": ["restraint", "caution", "limits", "bounded interpretation", "epistemic humility"],
+      "related_concepts": ["prohibited-inferences", "description-vs-inference", "witness", "symbolic-candidate"]
+    },
+    {
+      "id": "prohibited-inferences",
+      "title": "Prohibited Inferences",
+      "file": "concepts/prohibited-inferences.md",
+      "definition": "Seven hard constraints on inferences agents must not make.",
+      "retrieval_hints": ["prohibited", "forbidden", "must not", "constraints", "errors", "overreach"],
+      "related_concepts": ["interpretive-restraint", "description-vs-inference", "witness"]
+    }
+  ]
+}

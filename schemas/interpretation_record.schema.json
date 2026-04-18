@@ -1,0 +1,148 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://888.church/schemas/interpretation_record.schema.json",
+  "title": "Interpretation Record",
+  "description": "Structured output for a two-pass image interpretation. Pass 1 is literal description; pass 2 is reflective interpretation. All inference must be explicitly marked and separated from description.",
+  "type": "object",
+  "required": ["image_id", "literal_description", "witness_context", "uncertainty"],
+  "properties": {
+    "image_id": {
+      "type": "string",
+      "description": "Stable identifier for the image being interpreted"
+    },
+    "source": {
+      "type": "string",
+      "format": "uri",
+      "description": "URI of the image or archive entry"
+    },
+    "literal_description": {
+      "type": "string",
+      "description": "Pass 1: Observable forms, spatial relations, colors, text, and structure. No inference. Must be verifiable against the image surface."
+    },
+    "visual_relations": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Spatial and compositional relations between visible elements (e.g. 'figure positioned below light source', 'text runs along lower margin')"
+    },
+    "recurring_motifs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["form", "instance_count", "contexts"],
+        "properties": {
+          "form": { "type": "string", "description": "Description of the recurring element" },
+          "instance_count": { "type": "integer", "minimum": 1 },
+          "contexts": {
+            "type": "array",
+            "items": { "type": "string" },
+            "description": "Where and how this form recurs"
+          }
+        }
+      }
+    },
+    "symbolic_candidates": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["form", "recurrence_evidence", "tentative_range", "confidence"],
+        "properties": {
+          "form": { "type": "string" },
+          "recurrence_evidence": { "type": "string", "description": "What archive or image evidence supports candidacy" },
+          "contexts": { "type": "array", "items": { "type": "string" } },
+          "tentative_range": {
+            "type": "array",
+            "items": { "type": "string" },
+            "description": "Possible meanings — not fixed definitions"
+          },
+          "confidence": {
+            "type": "string",
+            "enum": ["low", "medium", "high"],
+            "description": "Confidence that symbolic function is active in this instance"
+          },
+          "confirming_evidence_needed": { "type": "string" }
+        }
+      }
+    },
+    "witness_context": {
+      "type": "object",
+      "required": ["observer_type"],
+      "properties": {
+        "observer_type": {
+          "type": "string",
+          "enum": ["machine", "human", "hybrid"],
+          "description": "The kind of witness producing this interpretation"
+        },
+        "archive": { "type": "string", "description": "Archive or dataset this image is drawn from" },
+        "archive_limitations": { "type": "string", "description": "Known biases or gaps in the archive" },
+        "agent_model": { "type": "string", "description": "If machine, the model producing this record" },
+        "context_available": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "What contextual information was available at interpretation time"
+        }
+      }
+    },
+    "archive_links": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Related archive entries, comparison images, or concept file IDs"
+    },
+    "interpretive_claims": {
+      "type": "array",
+      "description": "Pass 2: Reflective inferences. Each claim must state its basis explicitly.",
+      "items": {
+        "type": "object",
+        "required": ["claim", "basis", "confidence"],
+        "properties": {
+          "claim": { "type": "string" },
+          "basis": { "type": "string", "description": "What visual or archival evidence supports this claim" },
+          "confidence": {
+            "type": "string",
+            "enum": ["low", "medium", "high"]
+          },
+          "scope": {
+            "type": "string",
+            "description": "How broadly this claim applies (this image, this series, this tradition)"
+          }
+        }
+      }
+    },
+    "rejected_claims": {
+      "type": "array",
+      "description": "Inferences considered and explicitly rejected, with reasons",
+      "items": {
+        "type": "object",
+        "required": ["claim", "reason"],
+        "properties": {
+          "claim": { "type": "string" },
+          "reason": { "type": "string", "description": "Why this claim was rejected (prohibited inference, insufficient evidence, archive bias)" }
+        }
+      }
+    },
+    "uncertainty": {
+      "type": "object",
+      "required": ["overall_level"],
+      "properties": {
+        "overall_level": {
+          "type": "string",
+          "enum": ["low", "medium", "high"],
+          "description": "Overall interpretive uncertainty for this record"
+        },
+        "unresolved_questions": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "requires_human_witness": {
+          "type": "boolean",
+          "description": "Whether human review is recommended before acting on this interpretation"
+        }
+      }
+    },
+    "safety_notes": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Constraints and cautions specific to this record"
+    }
+  },
+  "additionalProperties": false
+}

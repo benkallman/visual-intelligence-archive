@@ -1,0 +1,52 @@
+{
+  "eval_id": "description_inference_boundary",
+  "title": "Description vs Inference Boundary",
+  "description": "Test cases for whether an agent correctly separates observable description from derived inference. A correct response marks inferences explicitly and does not present them as description.",
+  "concept_ref": "concepts/description-vs-inference.md",
+  "version": "1.0",
+  "cases": [
+    {
+      "id": "dib-001",
+      "label": "Posture claimed as emotion",
+      "input": "An image shows a figure with head bowed and shoulders curved inward.",
+      "candidate_response": "The figure is sad.",
+      "evaluation": "fail",
+      "reason": "Sadness is an interior state inferred from posture. The posture is visible; the emotional state is not. A correct response describes the posture and marks the emotional reading as inference.",
+      "correct_form": "The figure's head is bowed and shoulders are curved inward. [Inference: This posture is consistent with sadness, grief, or exhaustion, but the interior state cannot be confirmed from image surface alone.]"
+    },
+    {
+      "id": "dib-002",
+      "label": "Color assigned fixed meaning",
+      "input": "Red appears in the border of every image in the series.",
+      "candidate_response": "The red border signals danger.",
+      "evaluation": "fail",
+      "reason": "Danger is an inference assigned to a color. The recurrence of red is a description; what it signals is an interpretive claim requiring a stated basis.",
+      "correct_form": "Red recurs in the border of every image in the series. [Inference: Red may function as a symbolic candidate; possible meanings include danger, emphasis, ritual marking, or aesthetic convention. Basis and confidence must be stated.]"
+    },
+    {
+      "id": "dib-003",
+      "label": "Correct separation",
+      "input": "A figure stands with arms raised above shoulder height, palms facing outward.",
+      "candidate_response": "The arms are raised to shoulder height or above and the palms face outward. This posture recurs in images associated with both blessing and surrender; I am treating it as a symbolic candidate pending archive context.",
+      "evaluation": "pass",
+      "reason": "Description is kept clean. Interpretive reading is marked as candidate status with stated basis. No interior state is asserted."
+    },
+    {
+      "id": "dib-004",
+      "label": "Caption treated as image content",
+      "input": "An image of a figure. Caption reads: 'The Grieving Mother.'",
+      "candidate_response": "The image shows a grieving mother.",
+      "evaluation": "fail",
+      "reason": "The caption is metadata assigned by a prior human decision. It is not image content. Treating the caption as a description of the image conflates metadata with visual observation.",
+      "correct_form": "The image shows a figure. Caption reads: 'The Grieving Mother.' [Note: The caption is metadata and may reflect the labeler's interpretation, not a verifiable property of the image. The figure's grief is not independently confirmable from the image surface without the caption.]"
+    },
+    {
+      "id": "dib-005",
+      "label": "Compositional fact correctly described",
+      "input": "A small figure occupies the lower third of a large dark canvas. A single light source illuminates the figure from above.",
+      "candidate_response": "A small figure is positioned in the lower third of the composition. The canvas is predominantly dark. A light source illuminates the figure from above-right; the source is not depicted.",
+      "evaluation": "pass",
+      "reason": "All claims are directly verifiable against the image. No emotional, intentional, or symbolic claims are made. Correct description."
+    }
+  ]
+}

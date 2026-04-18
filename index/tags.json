@@ -1,0 +1,18 @@
+{
+  "updated_at": "2026-04-17",
+  "tags": {
+    "witness": ["the-viewer", "art-for-ai", "visual-intelligence-v1", "image-001-interpretation", "eval-witness-context", "prompt-interpret", "prompt-score"],
+    "description-vs-inference": ["visual-intelligence-v1", "pattern-recognition", "image-001-interpretation", "image-002-interpretation", "eval-description-inference", "prompt-interpret", "prompt-compare", "prompt-score"],
+    "recurrence": ["pattern-recognition", "symbolism", "visual-intelligence-v1", "image-002-interpretation", "eval-symbolic-overreach", "prompt-compare"],
+    "symbolic-candidate": ["symbolism", "visual-intelligence-v1", "image-001-interpretation", "image-002-interpretation", "eval-symbolic-overreach", "prompt-interpret", "prompt-compare"],
+    "archive-context": ["the-viewer", "art-for-ai", "visual-intelligence-v1", "image-002-interpretation", "eval-witness-context", "prompt-interpret", "prompt-compare"],
+    "interpretive-restraint": ["the-viewer", "art-for-ai", "visual-intelligence-v1", "image-001-interpretation", "image-002-interpretation", "eval-symbolic-overreach", "prompt-score"],
+    "prohibited-inferences": ["visual-intelligence-v1", "eval-symbolic-overreach", "eval-witness-context", "prompt-score"],
+    "manifesto": ["the-viewer", "art-for-ai"],
+    "agent-note": ["visual-intelligence-v1"],
+    "eval": ["eval-description-inference", "eval-symbolic-overreach", "eval-witness-context"],
+    "prompt": ["prompt-interpret", "prompt-compare", "prompt-score"],
+    "example": ["image-001-interpretation", "image-002-interpretation"],
+    "mcp": ["mcp-spec", "prompt-interpret", "prompt-compare", "prompt-score"]
+  }
+}
