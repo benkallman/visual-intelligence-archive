@@ -1,3 +1,14 @@
+---
+id: the-viewer
+title: The Viewer
+type: manifesto
+audience: [agents, humans, artists, crawlers]
+concepts: [witness, archive-context, symbolic-candidate, interpretive-restraint]
+retrieval_hints: [witness, machine vision, human seeing, art reading, observation]
+origin_url: https://888.church/the-viewer
+updated_at: 2026-04-17
+---
+
 # The Viewer
 
 Art is not received the same way by every observer.

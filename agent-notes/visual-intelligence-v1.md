@@ -1,3 +1,15 @@
+---
+id: visual-intelligence-v1
+title: Visual Intelligence v1
+type: agent-note
+audience: [agents, developers]
+concepts: [witness, description-vs-inference, recurrence, symbolic-candidate, interpretive-restraint, prohibited-inferences]
+retrieval_hints: [processing model, interpretation steps, agent instructions, cautions]
+safety_notes: [do not equate correlation with meaning, do not assign human states to machines]
+origin_url: https://888.church/the-viewer
+updated_at: 2026-04-17
+---
+
 # Visual Intelligence v1
 
 Title: Visual Intelligence v1

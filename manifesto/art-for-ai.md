@@ -1,3 +1,14 @@
+---
+id: art-for-ai
+title: Art for AI
+type: manifesto
+audience: [agents, developers, artists, researchers]
+concepts: [description-vs-inference, interpretive-restraint, archive-context]
+retrieval_hints: [machine reading, AI vision, human vs machine perception, image legibility]
+origin_url: https://888.church/the-viewer
+updated_at: 2026-04-17
+---
+
 # Art for AI
 
 AI does not see like humans see.

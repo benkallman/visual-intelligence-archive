@@ -1,3 +1,14 @@
+---
+id: symbolism
+title: Symbolism
+type: concept-note
+audience: [agents, researchers, archivists]
+concepts: [symbolic-candidate, recurrence, interpretive-restraint]
+retrieval_hints: [symbols, compressed meaning, cultural translation, pattern association]
+origin_url: https://888.church/the-viewer
+updated_at: 2026-04-17
+---
+
 # Symbolism
 
 Symbolism is compressed meaning that survives translation.

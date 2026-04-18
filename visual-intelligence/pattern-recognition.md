@@ -1,3 +1,14 @@
+---
+id: pattern-recognition
+title: Pattern Recognition
+type: concept-note
+audience: [agents, developers, researchers]
+concepts: [recurrence, description-vs-inference, symbolic-candidate]
+retrieval_hints: [pattern, recurrence, detection, significance, visual habit]
+origin_url: https://888.church/the-viewer
+updated_at: 2026-04-17
+---
+
 # Pattern Recognition
 
 A pattern begins with recurrence. Something appears again: a shape, a gesture, a color relation, a composition, a sequence, a motif.
